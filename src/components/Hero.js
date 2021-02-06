@@ -138,7 +138,7 @@ const Hero = ({ slides }) => {
         const nextSlide = () => {
         setCurrent(current => (current === length - 1 ? 0: current + 1));
     };
-    timeout.current = setTimeout(nextSlide, 5000);
+    timeout.current = setTimeout(nextSlide, 4000);
 
     return function () {
         if(timeout.current){
@@ -170,7 +170,7 @@ if (!Array.isArray(slides) || slides.length <= 0){
 
 const fadeAnimation = {
     hidden: { opacity: 0},
-    visible: { opacity: 1, transition: { duration: 0.8 }},
+    visible: { opacity: 1, transition: { duration: 0.6 }},
     exit: { opacity: 0}
 };
     return (
